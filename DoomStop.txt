@@ -1,0 +1,10 @@
+I want to write an application for Android and iPhone phones using React Native.
+This application should run on both Android and iPhone.
+The high-level overview of this application is that it is a productivity app that will run in the background and track how long the user has been using an application. If the user is using another app for too long without interruption, the application will interrupt their use with a pop-up window. The idea is that the pop-up interruption is enough to break someone from their hyperfixation and allow them the opportunity to stop using their phone on their own.
+This application should have the following features:
+- Monitor application usage on the user's phone in the background
+- The app should track how long the user has been using the currently running application without minimizing or closing it. If the user minimizes the app or switches to a different app, the count should reset.
+- The app should have a homepage that allows the user to set a number of minutes. This number of minutes should be stored as the variable interruptionTimeout.
+- This application should be able to run in the background to track app usage.
+- This application should be able to create and display a pop-up. The pop-up should display text and have an option to close it.
+- If the user has been using an application for a number of consecutive minutes greater than interruptionTimeout, this application should present a pop-up to the user, pausing the application they were using until the pop-up has been closed.
