@@ -1,10 +1,37 @@
 I want to write an application for Android and iPhone phones using React Native.
 This application should run on both Android and iPhone.
 The high-level overview of this application is that it is a productivity app that will run in the background and track how long the user has been using an application. If the user is using another app for too long without interruption, the application will interrupt their use with a pop-up window. The idea is that the pop-up interruption is enough to break someone from their hyperfixation and allow them the opportunity to stop using their phone on their own.
-This application should have the following features:
+Please provide a detailed design including complete code implementation using React Native for this application.
+This application should implement the following requirements:
+Objective:
+- This application should run in the background and provide a pop-up to the user after a set amount of uninterrupted use of a single application.
+Core Features:
 - Monitor application usage on the user's phone in the background
 - The app should track how long the user has been using the currently running application without minimizing or closing it. If the user minimizes the app or switches to a different app, the count should reset.
 - The app should have a homepage that allows the user to set a number of minutes. This number of minutes should be stored as the variable interruptionTimeout.
 - This application should be able to run in the background to track app usage.
 - This application should be able to create and display a pop-up. The pop-up should display text and have an option to close it.
 - If the user has been using an application for a number of consecutive minutes greater than interruptionTimeout, this application should present a pop-up to the user, pausing the application they were using until the pop-up has been closed.
+User Interface:
+- The user should be able to open the application to view a homepage.
+- The applications homepage should have two fields.
+- Field 1 should be a selector that allows them to select a number of minutes. This number will be how long an application must be open at a time before the pop-up is shown.
+- Field 2 is a simple selector that enables and disables the pop-up function. If the user selects disable on this selector, this application won't monitor app usage or show pop-ups until the selector is set back to enable.
+Technical Requirements:
+- This application should run on both Android and iPhone.
+- This application should use React Native.
+- This application should use up-to-date software versions and packages.
+- Any common libraries are allowed.
+- This app should be as simple as possible.
+Expected Behavior:
+- 1. The user opens the application and sees a scroll wheel of number of minutes, and a button to enable/disable the app.
+- 2. The user first sets the number of minutes before the app throws a pop-up. Example: 15 minutes.
+- 3. The user presses the enable selector button to enable the application. The application is now enabled and tracking app usage.
+- 4. The user is then free to minimize this application and start using their phone as normal.
+- 5. The user then clicks on another application such as a phone game.
+- 6. When the user is playing their phone game for more than 15 minutes without minimizing or closing it, then this application pauses their currently used app and presents a pop-up window.
+- 7. The pop-up window simply displays text and has a button to close the pop-up.
+- 8. The user clicks "close" on the pop-up and their phone game resumes.
+- 9. This application continues monitoring app usage and will repeat steps 6 through 9 for every 15 minutes of uninterrupted use, resetting every time the pop-up is displayed.
+
+Please include considerations for platform-specific limitations (e.g., iOS restrictions on background activity and app monitoring) and suggest possible workarounds.
