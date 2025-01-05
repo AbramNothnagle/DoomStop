@@ -1,5 +1,5 @@
-I want to write an application for Android and iPhone phones using React Native.
-This application should run on both Android and iPhone.
+I want to write an application for Android phones using React Native.
+This application should run on Android.
 The high-level overview of this application is that it is a productivity app that will run in the background and track how long the user has been using an application. If the user is using another app for too long without interruption, the application will interrupt their use with a pop-up window. The idea is that the pop-up interruption is enough to break someone from their hyperfixation and allow them the opportunity to stop using their phone on their own.
 Please provide a detailed design including complete code implementation using React Native for this application.
 This application should implement the following requirements:
@@ -18,7 +18,7 @@ User Interface:
 - Field 1 should be a selector that allows them to select a number of minutes. This number will be how long an application must be open at a time before the pop-up is shown.
 - Field 2 is a simple selector that enables and disables the pop-up function. If the user selects disable on this selector, this application won't monitor app usage or show pop-ups until the selector is set back to enable.
 Technical Requirements:
-- This application should run on both Android and iPhone.
+- This application should run on Android.
 - This application should use React Native.
 - This application should use up-to-date software versions and packages.
 - Any common libraries are allowed.
